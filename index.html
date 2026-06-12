@@ -2,16 +2,282 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Antonio Cuesta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antonio Cuesta — Audioprotesista independiente</title>
+<meta name="description" content="Antonio Cuesta, audioprotesista independiente con más de 30 años de experiencia adaptando audífonos.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f4f1ec;
+  --ink:#111;
+  --muted:#5f5a54;
+  --line:#d8d1c7;
+  --soft:#ebe6de;
+}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Inter,sans-serif;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:auto;padding:0 28px}
+header{
+  padding:28px 0;
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+}
+.brand{
+  font-family:"Playfair Display",serif;
+  font-size:24px;
+  letter-spacing:.04em;
+}
+.tag{font-size:14px;color:var(--muted)}
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  padding:70px 0;
+}
+.hero h1{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(48px,7vw,92px);
+  line-height:.98;
+  font-weight:900;
+  margin-bottom:28px;
+}
+.hero h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(25px,3vw,38px);
+  line-height:1.18;
+  font-weight:500;
+  margin-bottom:28px;
+}
+.hero p{
+  font-size:20px;
+  color:var(--muted);
+  margin-bottom:28px;
+}
+.btn{
+  display:inline-block;
+  background:#111;
+  color:#fff;
+  padding:16px 26px;
+  border-radius:3px;
+  font-weight:600;
+  letter-spacing:.04em;
+  font-size:14px;
+}
+.photo{
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  filter:grayscale(100%);
+  border-radius:2px;
+}
+section{
+  padding:62px 0;
+  border-top:1px solid var(--line);
+}
+.section-grid{
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:60px;
+}
+.label{
+  font-family:"Playfair Display",serif;
+  letter-spacing:.22em;
+  font-size:18px;
+}
+.text p{
+  font-size:18px;
+  color:#333;
+  margin-bottom:18px;
+  max-width:780px;
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.card{
+  background:var(--soft);
+  padding:30px;
+  border:1px solid var(--line);
+}
+.card h3{
+  font-family:"Playfair Display",serif;
+  font-size:25px;
+  line-height:1.15;
+  margin-bottom:12px;
+}
+.card p{color:var(--muted)}
+.help{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.help div{
+  background:#fff;
+  border:1px solid var(--line);
+  padding:24px;
+  text-align:center;
+}
+.help strong{
+  display:block;
+  font-family:"Playfair Display",serif;
+  font-size:21px;
+  margin-top:8px;
+}
+.faq{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.faq div{
+  background:#fff;
+  border:1px solid var(--line);
+  padding:20px;
+}
+.final{
+  background:#111;
+  color:#fff;
+  padding:60px;
+  margin:60px 0;
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:center;
+}
+.final h2{
+  font-family:"Playfair Display",serif;
+  font-size:42px;
+  line-height:1.1;
+}
+.final p{color:#ccc;margin-top:14px}
+.final .btn{background:#fff;color:#111}
+footer{
+  border-top:1px solid var(--line);
+  padding:28px 0;
+  color:var(--muted);
+  font-size:14px;
+}
+@media(max-width:850px){
+  .hero,.section-grid{grid-template-columns:1fr}
+  .hero{padding:42px 0;gap:34px}
+  .cards,.help,.faq{grid-template-columns:1fr}
+  .final{flex-direction:column;align-items:flex-start;padding:34px}
+  .header-inner{align-items:flex-start;flex-direction:column}
+}
+</style>
 </head>
 
 <body>
 
-<h1>Antonio Cuesta</h1>
+<header>
+  <div class="wrap header-inner">
+    <div>
+      <div class="brand">Antonio Cuesta</div>
+      <div class="tag">Audioprotesista independiente</div>
+    </div>
+    <div class="tag">Smart Productos Auditivos</div>
+  </div>
+</header>
 
-<p>Audioprotesista independiente.</p>
+<main class="wrap">
 
-<p>30 años adaptando audífonos.</p>
+<section class="hero">
+  <div>
+    <h1>30 años adaptando audífonos.</h1>
+    <h2>El mejor audífono no es el más caro. Es el que mejor se adapta a ti.</h2>
+    <p>Si necesitas un audífono, te lo diré.<br>Y si no lo necesitas, también.</p>
+    <a class="btn" href="https://wa.me/34672465468?text=Hola%20Antonio%2C%20me%20gustar%C3%ADa%20consultarte%20sobre%20mi%20audici%C3%B3n" target="_blank">HABLAR POR WHATSAPP</a>
+  </div>
+
+  <img class="photo" src="archivo_00000000d6c47243be38789f8bb2b9a9-01.jpeg" alt="Antonio Cuesta, audioprotesista independiente">
+</section>
+
+<section>
+  <div class="section-grid">
+    <h2 class="label">QUIÉN SOY</h2>
+    <div class="text">
+      <p>Me llamo Antonio Cuesta y llevo más de 30 años trabajando como audioprotesista.</p>
+      <p>Durante este tiempo he visto miles de audiometrías, cientos de situaciones diferentes y prácticamente todas las dudas que una persona puede tener cuando empieza a perder audición.</p>
+      <p>He aprendido que no existen dos casos iguales. Por eso no creo en recomendar el mismo audífono para todo el mundo.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="label" style="text-align:center;margin-bottom:38px;">LO QUE HE APRENDIDO EN 30 AÑOS</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Muchas personas gastan más de lo necesario.</h3>
+      <p>Porque nadie les explicó realmente las diferencias entre unas opciones y otras.</p>
+    </div>
+    <div class="card">
+      <h3>Muchas personas esperan demasiado.</h3>
+      <p>Y terminan perdiéndose conversaciones, reuniones familiares y momentos importantes.</p>
+    </div>
+    <div class="card">
+      <h3>Muchas personas necesitan orientación.</h3>
+      <p>Antes incluso de pensar en comprar un audífono.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="label" style="text-align:center;margin-bottom:34px;">¿PUEDO AYUDARTE?</h2>
+  <div class="help">
+    <div>👂<strong>Creo que oigo peor.</strong></div>
+    <div>📺<strong>Tengo que subir la televisión.</strong></div>
+    <div>💬<strong>Me cuesta seguir conversaciones.</strong></div>
+    <div>🎧<strong>Ya llevo audífonos y no estoy satisfecho.</strong></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-grid">
+    <h2 class="label">CÓMO TRABAJO</h2>
+    <div class="text">
+      <p>Trabajo de forma independiente y colaboro con distintos centros auditivos.</p>
+      <p>Esto me permite valorar diferentes opciones y recomendar la solución más adecuada para cada persona.</p>
+      <p>No trabajo para una marca concreta. Trabajo para encontrar la solución que mejor encaje contigo.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="label" style="margin-bottom:30px;">PREGUNTAS FRECUENTES</h2>
+  <div class="faq">
+    <div><strong>¿Necesito audífonos?</strong><br>Depende de tu pérdida auditiva y de cómo afecta a tu vida diaria.</div>
+    <div><strong>¿Cuánto cuestan?</strong><br>Existen diferentes gamas. Lo importante es encontrar la opción adecuada.</div>
+    <div><strong>¿Puedo probarlos antes de decidir?</strong><br>En muchos casos sí. Lo importante es valorar primero tu situación.</div>
+    <div><strong>¿Trabajas con una marca concreta?</strong><br>No. Valoro distintas opciones según cada caso.</div>
+  </div>
+</section>
+
+<div class="final">
+  <div>
+    <h2>¿Tienes dudas sobre tu audición?</h2>
+    <p>Cuéntame tu caso. Llevo 30 años escuchando problemas de audición. Probablemente el tuyo también tenga solución.</p>
+  </div>
+  <a class="btn" href="https://wa.me/34672465468?text=Hola%20Antonio%2C%20tengo%20dudas%20sobre%20mi%20audici%C3%B3n" target="_blank">HABLAR POR WHATSAPP</a>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">© Antonio Cuesta · Smart Productos Auditivos</div>
+</footer>
 
 </body>
 </html>
